@@ -42,7 +42,7 @@ export function VariableRowFixed({ variable, calculations }: VariableRowProps) {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Variable name"
-              className="max-w-[180px]"
+              className="max-w-[180px] py-5"
             />
           </div>
           <div className="p-4">

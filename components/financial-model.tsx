@@ -102,7 +102,7 @@ export default function FinancialModel() {
         </div>
       )}
 
-      <div className="border rounded-lg overflow-hidden">
+      <div className="border rounded-lg overflow-x-auto md:overflow-hidden">
         <div className="grid grid-cols-[200px_300px_1fr_48px]">
           {/* Fixed headers */}
           <div className="col-span-2 bg-muted/50">
@@ -117,7 +117,7 @@ export default function FinancialModel() {
           </div>
 
           {/* Scrollable month headers */}
-          <div className="overflow-x-auto bg-muted/50 border-b">
+          <div className="overflow-x-auto min-w-40 bg-muted/50 border-b">
             <div className="flex min-w-max">
               {Array.from({ length: 2 }).map((_, i) => (
                 <div

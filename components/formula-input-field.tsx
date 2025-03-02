@@ -320,7 +320,7 @@ export function FormulaInputField({ value, onChange }: FormulaInputFieldProps) {
   return (
     <div className="relative" ref={containerRef}>
       <div
-        className="flex items-center overflow-hidden gap-2 flex-wrap p-3 border rounded-md bg-white min-h-[42px] focus-within:ring-2 focus-within:ring-ring focus-within:border-input "
+        className="flex items-center overflow-hidden gap-x-2 gap-y-1 flex-wrap px-1.5 py-1 border rounded-md bg-white min-h-[42px] focus-within:ring-2 focus-within:ring-ring focus-within:border-input "
         onClick={() => {
           if (document.activeElement !== inputRef.current) {
             setCursorPosition(null);
@@ -395,7 +395,7 @@ export function FormulaInputField({ value, onChange }: FormulaInputFieldProps) {
           }}
           onKeyDown={handleKeyDown}
           onFocus={() => setCursorPosition(null)}
-          className="flex-1 min-w-[60px] outline-none bg-transparent"
+          className="flex-1 min-w-[60px] text-sm outline-none bg-transparent"
           placeholder={value.length === 0 ? "Enter formula..." : ""}
         />
       </div>
