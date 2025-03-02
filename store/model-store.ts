@@ -94,10 +94,7 @@ function calculateAllFormulas(variables: Variable[]) {
         return;
       }
 
-      const monthlyValues = calculateFormulaWithTags(
-        variable.formula,
-        variables
-      );
+      const monthlyValues = calculateFormulaWithTags(variable.formula);
       calculations[variable.id] = monthlyValues;
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);

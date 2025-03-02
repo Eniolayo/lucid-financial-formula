@@ -170,7 +170,6 @@ export function FormulaInputField({ value, onChange }: FormulaInputFieldProps) {
         // Insert at cursor position
         const newValue = [...value];
         const prevItem = newValue[cursorPosition - 1];
-        const nextItem = newValue[cursorPosition];
 
         // Check if valid in this position according to BODMAS rules
         const isValidPosition =

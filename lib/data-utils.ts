@@ -51,7 +51,7 @@ export function exportToCSV(data: any) {
     }
 
     // Build the formula string
-    variable.formula.forEach((item, index) => {
+    variable.formula.forEach((item) => {
       if (item.type === "tag") {
         // Add tag name and value
         formulaStr += `${item.name} (${item.value})`;

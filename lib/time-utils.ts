@@ -1,5 +1,3 @@
-import { Variable } from "@/store/model-store";
-
 export function applyTimePeriod(
   baseValue: number,
   timePeriod: string
@@ -181,8 +179,7 @@ export function calculateFormulaWithTags(
     value?: number;
     timePeriod?: string;
     operator?: string;
-  }>,
-  variables: Variable[]
+  }>
 ): number[] {
   if (formula.length === 0) {
     return Array(12).fill(0);

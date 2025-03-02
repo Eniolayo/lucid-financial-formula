@@ -7,7 +7,7 @@ import { useModelStore } from "@/store/model-store";
 import { Button } from "@/components/ui/button";
 import { Plus, Download, Upload } from "lucide-react";
 import { Alert } from "@/components/ui/alert";
-import { exportToCSV, importFile, importFromJSON } from "@/lib/data-utils";
+import { exportToCSV, importFile } from "@/lib/data-utils";
 import { VariableRowFixed } from "./variable-row";
 
 export default function FinancialModel() {
@@ -88,7 +88,7 @@ export default function FinancialModel() {
       )}
       {showImportError && (
         <Alert variant="destructive">
-          Failed to import file. Please ensure it's a valid JSON file.
+          Failed to import file. Please ensure it&apos;s a valid JSON file.
         </Alert>
       )}
 
